@@ -23,6 +23,7 @@ int indexPerson = 0;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     _people = [[NSMutableArray alloc] init];
+    _games = [[NSMutableArray alloc] init];
     //_personAtIndex = [[SWObject alloc] init];
     [self getGames];
     //[self getPeople];
@@ -142,47 +143,22 @@ int indexPerson = 0;
         cell = [tableView dequeueReusableCellWithIdentifier:@"cellMainTable"];
     }
     //Fill cell with info from arrays
-
-    cell.lblAwayName.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
     
-    SWObject *person = [_people objectAtIndex:indexPath.row];
-    NSString *name = person.name;
-    cell.lblHomeName.text = name;
+    BeisbolObject *game = [_games objectAtIndex:indexPath.row];
+    
+    
+
+    cell.lblAwayName.text = game.away_name;
+    cell.lblHomeName.text = game.home_name;
+    cell.lblTime.text = game.time;
+    cell.lblStartTime.text = game.startTime;
     
     return cell;
 }
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    //Get index number from the current cell
-    cellMainTable *cell = (cellMainTable *)[tableView cellForRowAtIndexPath:indexPath];
-    NSString *index = cell.lblAwayName.text;
-    
-    //Call [getPersonAtIndex:NSString index] method to obtain and array with the person's details
-    //SWObject *personAtIndex = [self getPersonAtIndex:index.intValue];
-    //NSString *name = personAtIndex.name;
-    //NSLog(@"////////////////////////////////////////////////////////////////////////print name at didSelecttedRowAtIndexPath: %@", name);
-    
-    SWObject *person = [_people objectAtIndex:index.intValue];
-    NSString *name = person.name;
-    NSString *gender = person.gender;
-    NSString *hair_color = person.hair_color;
-    NSString *height = person.height;
-    NSString *skin_color = person.skin_color;
-    NSString *mass = person.mass;
-    
-    self.dataToSend = [[NSMutableArray alloc]init];
-    [self.dataToSend addObject:@{
-                         @"name" :  name,
-                         @"gender" : gender,
-                         @"hair_color" : hair_color,
-                         @"height" : height,
-                         @"skin_color" : skin_color,
-                         @"mass" : mass
-                         }];
-    
-    NSDictionary *objectToSend = self.dataToSend[0];
-    [self performSegueWithIdentifier:@"secondView" sender:objectToSend];
+    //Pending
     NSLog(@"Item selected");
 }
 /**********************************************************************************************/
@@ -192,6 +168,7 @@ int indexPerson = 0;
     [self getGames];
     //Reload the table to fill it with the characters since at load time, the number of characters is 0
     [self.tbMain reloadData];
+    NSLog(@"········································Reloading");
 }
 
 
