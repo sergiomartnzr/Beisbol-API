@@ -126,7 +126,7 @@ int indexPerson = 0;
 //-------------------------------------------------------------------------------
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     //Get the number of characters after load the from API
-    return self.people.count;
+    return self.games.count;
 }
 //-------------------------------------------------------------------------------
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -143,11 +143,11 @@ int indexPerson = 0;
     }
     //Fill cell with info from arrays
 
-    cell.lblIndex.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
+    cell.lblAwayName.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
     
     SWObject *person = [_people objectAtIndex:indexPath.row];
     NSString *name = person.name;
-    cell.lblName.text = name;
+    cell.lblHomeName.text = name;
     
     return cell;
 }
@@ -156,7 +156,7 @@ int indexPerson = 0;
     
     //Get index number from the current cell
     cellMainTable *cell = (cellMainTable *)[tableView cellForRowAtIndexPath:indexPath];
-    NSString *index = cell.lblIndex.text;
+    NSString *index = cell.lblAwayName.text;
     
     //Call [getPersonAtIndex:NSString index] method to obtain and array with the person's details
     //SWObject *personAtIndex = [self getPersonAtIndex:index.intValue];
