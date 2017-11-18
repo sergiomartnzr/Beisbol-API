@@ -21,6 +21,14 @@
 		DBF21A3C2681C6287040F143 /* libPods-Starwars API.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8083ADB0DC8598602DB2EDBF /* libPods-Starwars API.a */; };
 		ED27FCD91FB8AB65002231C7 /* Details.m in Sources */ = {isa = PBXBuildFile; fileRef = ED27FCD81FB8AB65002231C7 /* Details.m */; };
 		ED70D71C1FBD157800946BB6 /* BeisbolObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ED70D71B1FBD157800946BB6 /* BeisbolObject.m */; };
+		ED70D7231FBFD65200946BB6 /* Cañeros.png in Resources */ = {isa = PBXBuildFile; fileRef = ED70D71E1FBFD65000946BB6 /* Cañeros.png */; };
+		ED70D7241FBFD65200946BB6 /* Charros.png in Resources */ = {isa = PBXBuildFile; fileRef = ED70D71F1FBFD65000946BB6 /* Charros.png */; };
+		ED70D7251FBFD65200946BB6 /* Mayos.png in Resources */ = {isa = PBXBuildFile; fileRef = ED70D7201FBFD65100946BB6 /* Mayos.png */; };
+		ED70D7261FBFD65200946BB6 /* Naranjeros.png in Resources */ = {isa = PBXBuildFile; fileRef = ED70D7211FBFD65100946BB6 /* Naranjeros.png */; };
+		ED70D7271FBFD65200946BB6 /* Águilas.png in Resources */ = {isa = PBXBuildFile; fileRef = ED70D7221FBFD65200946BB6 /* Águilas.png */; };
+		ED70D7291FBFD67E00946BB6 /* Tomateros.png in Resources */ = {isa = PBXBuildFile; fileRef = ED70D7281FBFD67D00946BB6 /* Tomateros.png */; };
+		ED70D72C1FBFD69800946BB6 /* Yaquis.png in Resources */ = {isa = PBXBuildFile; fileRef = ED70D72A1FBFD69700946BB6 /* Yaquis.png */; };
+		ED70D72D1FBFD69800946BB6 /* Venados.png in Resources */ = {isa = PBXBuildFile; fileRef = ED70D72B1FBFD69700946BB6 /* Venados.png */; };
 		ED8B50AF1FB7E77300EEBCE3 /* cellMainTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8B50AD1FB7E77300EEBCE3 /* cellMainTable.m */; };
 		ED8B50B01FB7E77300EEBCE3 /* cellMainTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED8B50AE1FB7E77300EEBCE3 /* cellMainTable.xib */; };
 /* End PBXBuildFile section */
@@ -52,6 +60,14 @@
 		ED27FCD81FB8AB65002231C7 /* Details.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Details.m; sourceTree = "<group>"; };
 		ED70D71A1FBD157800946BB6 /* BeisbolObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeisbolObject.h; sourceTree = "<group>"; };
 		ED70D71B1FBD157800946BB6 /* BeisbolObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeisbolObject.m; sourceTree = "<group>"; };
+		ED70D71E1FBFD65000946BB6 /* Cañeros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cañeros.png"; sourceTree = "<group>"; };
+		ED70D71F1FBFD65000946BB6 /* Charros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Charros.png; sourceTree = "<group>"; };
+		ED70D7201FBFD65100946BB6 /* Mayos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mayos.png; sourceTree = "<group>"; };
+		ED70D7211FBFD65100946BB6 /* Naranjeros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Naranjeros.png; sourceTree = "<group>"; };
+		ED70D7221FBFD65200946BB6 /* Águilas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Águilas.png"; sourceTree = "<group>"; };
+		ED70D7281FBFD67D00946BB6 /* Tomateros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tomateros.png; sourceTree = "<group>"; };
+		ED70D72A1FBFD69700946BB6 /* Yaquis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yaquis.png; sourceTree = "<group>"; };
+		ED70D72B1FBFD69700946BB6 /* Venados.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Venados.png; sourceTree = "<group>"; };
 		ED8B50AC1FB7E77300EEBCE3 /* cellMainTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cellMainTable.h; sourceTree = "<group>"; };
 		ED8B50AD1FB7E77300EEBCE3 /* cellMainTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cellMainTable.m; sourceTree = "<group>"; };
 		ED8B50AE1FB7E77300EEBCE3 /* cellMainTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cellMainTable.xib; sourceTree = "<group>"; };
@@ -89,6 +105,7 @@
 		D15F8FE61FB3D790003035D7 = {
 			isa = PBXGroup;
 			children = (
+				ED70D71D1FBFD5E900946BB6 /* imgs */,
 				ED8B50AB1FB7E70B00EEBCE3 /* Cells */,
 				D15F900D1FB3D810003035D7 /* Podfile */,
 				D15F8FF11FB3D790003035D7 /* StarWars API */,
@@ -166,6 +183,21 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		ED70D71D1FBFD5E900946BB6 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				ED70D72B1FBFD69700946BB6 /* Venados.png */,
+				ED70D72A1FBFD69700946BB6 /* Yaquis.png */,
+				ED70D7281FBFD67D00946BB6 /* Tomateros.png */,
+				ED70D7221FBFD65200946BB6 /* Águilas.png */,
+				ED70D71E1FBFD65000946BB6 /* Cañeros.png */,
+				ED70D71F1FBFD65000946BB6 /* Charros.png */,
+				ED70D7201FBFD65100946BB6 /* Mayos.png */,
+				ED70D7211FBFD65100946BB6 /* Naranjeros.png */,
+			);
+			path = imgs;
+			sourceTree = "<group>";
+		};
 		ED8B50AB1FB7E70B00EEBCE3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,10 +270,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D15F90021FB3D790003035D7 /* LaunchScreen.storyboard in Resources */,
+				ED70D72C1FBFD69800946BB6 /* Yaquis.png in Resources */,
 				ED8B50B01FB7E77300EEBCE3 /* cellMainTable.xib in Resources */,
 				D15F8FFF1FB3D790003035D7 /* Assets.xcassets in Resources */,
 				D15F900E1FB3D810003035D7 /* Podfile in Resources */,
 				D15F8FFA1FB3D790003035D7 /* Main.storyboard in Resources */,
+				ED70D7251FBFD65200946BB6 /* Mayos.png in Resources */,
+				ED70D7291FBFD67E00946BB6 /* Tomateros.png in Resources */,
+				ED70D7271FBFD65200946BB6 /* Águilas.png in Resources */,
+				ED70D7231FBFD65200946BB6 /* Cañeros.png in Resources */,
+				ED70D7261FBFD65200946BB6 /* Naranjeros.png in Resources */,
+				ED70D72D1FBFD69800946BB6 /* Venados.png in Resources */,
+				ED70D7241FBFD65200946BB6 /* Charros.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@
 @property (strong, nonatomic) NSMutableArray *people;
 @property (strong, nonatomic) SWObject *personAtIndex;
 @property NSMutableArray *dataToSend;
+@property NSMutableArray *userImages;
 @end
 
 int indexPerson = 0;
@@ -34,6 +35,11 @@ int indexPerson = 0;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)initController {
+    
+    self.userImages = [[NSMutableArray alloc] initWithObjects: [UIImage imageNamed:@"venados.png"], [UIImage imageNamed:@"yaquis.png"], [UIImage imageNamed:@"tomateros.png"], [UIImage imageNamed:@"aguilas.png"], [UIImage imageNamed:@"caneros.png"], nil];
 }
 
 //********************************************************************************************
@@ -152,6 +158,8 @@ int indexPerson = 0;
     cell.lblHomeName.text = game.home_name;
     cell.lblTime.text = game.time;
     cell.lblStartTime.text = game.startTime;
+    cell.imgAway.image = [UIImage imageNamed:[NSString stringWithFormat: @"%@.png", game.away_name]];
+    cell.imgHome.image = [UIImage imageNamed:[NSString stringWithFormat: @"%@.png", game.home_name]];
     
     return cell;
 }
